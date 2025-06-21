@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Product Detail</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body onload="loadProductDetail()">
+
+<header class="navbar">
+  <div class="logo">amazon.in</div>
+  <div class="nav-items">
+    <a href="login.html" class="nav-link">Login</a>
+    <span id="greeting">Hi, Guest</span>
+    <span>🛒 <span id="cart-count">0</span></span>
+  </div>
+</header>
+
+<div class="product-detail-container">
+  <img id="detail-img" src="" />
+  <div class="product-info">
+    <h2 id="detail-title"></h2>
+    <p id="detail-price"></p>
+    <p><strong>Features:</strong></p>
+    <ul id="detail-features"></ul>
+    <button onclick="addToCartFromDetail()">Add to Cart</button>
+
+    <h3>Reviews:</h3>
+    <div id="reviews">
+      <p>⭐️⭐️⭐️⭐️⭐️ Excellent product!</p>
+      <p>⭐️⭐️⭐️ Good value for money.</p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

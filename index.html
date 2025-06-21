@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amazon Clone</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body onload="displayName()">
+
+  <header class="navbar">
+    <div class="logo">amazon.in</div>
+    <div class="search-bar"><input type="text" placeholder="Search..." /></div>
+    <div class="nav-items">
+        <a href="login.html" class="nav-link">Login</a>
+        <span id="greeting">Hi, Guest</span>
+        <a href="cart.html" class="nav-link">🛒 <span id="cart-count">0</span></a>
+</div>
+  </header>
+
+  <marquee class="offers">
+    🔥 Great Deals on Electronics! | Up to 60% OFF on Mobiles | Fashion Sale Live Now | Mega Discounts on Smart Gadgets | Summer Sale - Limited Time Only 🔥
+  </marquee>
+  
+  <!-- Electronics Category -->
+<section class="product-category">
+    <h2>Electronics</h2>
+    <div class="product-section">
+      <div class="product-card" onclick="viewProduct(1)">
+        <img src="images/bluetooth.jpeg" />
+        <h3>Bluetooth Headset</h3>
+        <p>₹799</p>
+        <button onclick="addToCart(event, 1)">Add to Cart</button>
+      </div>
+      <div class="product-card" onclick="viewProduct(2)">
+        <img src="images/watch.jpeg" />
+        <h3>Smartwatch</h3>
+        <p>₹999</p>
+        <button onclick="addToCart(event, 2)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Accessories Category -->
+  <section class="product-category">
+    <h2>Accessories</h2>
+    <div class="product-section">
+      <div class="product-card" onclick="viewProduct(3)">
+        <img src="images/mouse.jpeg" />
+        <h3>Wireless Mouse</h3>
+        <p>₹1,299</p>
+        <button onclick="addToCart(event, 3)">Add to Cart</button>
+      </div>
+      <div class="product-card" onclick="viewProduct(4)">
+        <img src="images/charger.jpeg" />
+        <h3>Phone Charger</h3>
+        <p>₹599</p>
+        <button onclick="addToCart(event, 4)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Home & Kitchen Category -->
+  <section class="product-category">
+    <h2>Home & Kitchen</h2>
+    <div class="product-section">
+      <div class="product-card" onclick="viewProduct(5)">
+        <img src="images/Electric-Kettle.jpeg" />
+        <h3>Electric Kettle</h3>
+        <p>₹899</p>
+        <button onclick="addToCart(event, 5)">Add to Cart</button>
+      </div>
+      <div class="product-card" onclick="viewProduct(6)">
+        <img src="images/Induction-Cooktop.jpeg" />
+        <h3>Induction Cooktop</h3>
+        <p>₹1,499</p>
+        <button onclick="addToCart(event, 6)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+  
+  <h2>All Items</h2>
+  <section class="product-section">
+    
+    <div class="product-card" onclick="viewProduct(1)">
+      <img src="images/bluetooth.jpeg" />
+      <h3>Bluetooth Headset</h3>
+      <p>₹799</p>
+      <button onclick="addToCart(event, 1)">Add to Cart</button>
+    </div>
+  
+    <div class="product-card" onclick="viewProduct(2)">
+      <img src="images/watch.jpeg" />
+      <h3>Smartwatch</h3>
+      <p>₹1,299</p>
+      <button onclick="addToCart(event, 2)">Add to Cart</button>
+    </div>
+
+    <div class="product-card" onclick="viewProduct(1)">
+        <img src="images/bluetooth.jpeg" />
+        <h3>Bluetooth Headset</h3>
+        <p>₹799</p>
+        <button onclick="addToCart(event, 1)">Add to Cart</button>
+      </div>
+    
+      <div class="product-card" onclick="viewProduct(2)">
+        <img src="images/watch.jpeg" />
+        <h3>Smartwatch</h3>
+        <p>₹1,299</p>
+        <button onclick="addToCart(event, 2)">Add to Cart</button>
+      </div>
+
+      <div class="product-card" onclick="viewProduct(1)">
+        <img src="images/bluetooth.jpeg" />
+        <h3>Bluetooth Headset</h3>
+        <p>₹799</p>
+        <button onclick="addToCart(event, 1)">Add to Cart</button>
+      </div>
+    
+      <div class="product-card" onclick="viewProduct(2)">
+        <img src="images/watch.jpeg" />
+        <h3>Smartwatch</h3>
+        <p>₹1,299</p>
+        <button onclick="addToCart(event, 2)">Add to Cart</button>
+      </div>
+  
+    <!-- ...repeat for other products... -->
+  </section>  
+
+  <footer>
+    <p>&copy; 2022 Amazon Clone | Built for educational purpose</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
